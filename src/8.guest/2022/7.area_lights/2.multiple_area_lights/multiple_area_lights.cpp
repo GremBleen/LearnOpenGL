@@ -491,10 +491,10 @@ void do_movement(GLfloat deltaTime)
 	    else incrementRoughness(-0.01f);
     }
 
-    // if (keys[GLFW_KEY_I]) {
-	//     if (keys[GLFW_KEY_LEFT_SHIFT]) incrementLightIntensity(0.025f);
-	//     else incrementLightIntensity(-0.025f);
-    // }
+    if (keys[GLFW_KEY_I]) {
+	    if (keys[GLFW_KEY_LEFT_SHIFT]) incrementLightIntensity(0.025f);
+	    else incrementLightIntensity(-0.025f);
+    }
 }
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
